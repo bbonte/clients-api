@@ -5,7 +5,7 @@ var ClientSchema = new mongoose.Schema({
   cpf: {
     type: String,
     required: true
-  }
+  },
   name: {
     type: String,
     required: true
@@ -23,7 +23,7 @@ var ClientSchema = new mongoose.Schema({
     required: true
   },
   phoneNumbers: {
-    type: [String]
+    type: [String],
     required: true
   }
 });

@@ -1,0 +1,34 @@
+<a class="btn btn-primary" href="/#/create/client"><span class="glyphicon glyphicon-plus"></span> New client</a>
+<br>
+<br>
+<table class="table table-striped">
+  <thead>
+    <th>Name</th>
+    <th>CPF</th>
+    <th>E-mail</th>
+    <th>Marital status</th>
+    <th>Address</th>
+    <th>Phone numbers</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="client in clients">
+      <td><a ng-href="/#/client/{{ client._id }}">{{ client.name }}</a></td>
+      <td>{{ client.cpf }}</td>
+      <td>{{ client.email }}</td>
+      <td>{{ client.maritalStatus }}</td>
+      <td>{{ client.address }}</td>
+      <td>{{ client.phoneNumbers }}</td>
+      <td>
+        <div class="button-group">
+          <a ng-href="/#/client/{{ client._id }}/edit" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-pencil"></span>
+          </a>
+          <a ng-href="/#/client/{{ client._id }}/delete" class="btn btn-danger btn-sm">
+            <span class="glyphicon glyphicon-remove"></span>
+          </a>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
