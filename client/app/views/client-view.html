@@ -5,4 +5,6 @@
 <p>E-mail: {{ client.email }}</p>
 <p>Marital status: {{ client.maritalStatus }}</p>
 <p>Address: {{ client.address }}</p>
-<p>Phone numbers: {{ client.phoneNumbers }}</p>
+<p>Phone numbers:<br>
+  <span ng-repeat="phoneNumber in client.phoneNumbers">{{ phoneNumber }}</span>
+</p>
