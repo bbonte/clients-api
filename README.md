@@ -1,2 +1,7 @@
 # clients-api
-Clients API developed by Bruno Bonte (May 2015)
+Client management API - to experiment with fullstack MEAN javascript framework.
+MEAN stands for:
+- MongoDB
+- Express
+- AngularJS
+- NodeJS
